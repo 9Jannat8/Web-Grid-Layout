@@ -1,0 +1,44 @@
+.item1 {grid-area: header;}
+.item2 {grid-area: menu;}
+.item3 {grid-area: main;}
+.item4 {grid-area: aside;}
+.item5 {grid-area: footer;}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto auto; */
+    /* grid-template-columns er kaj akhn grid-area korbe */
+    grid-template-areas:
+        'header header header header header header header'
+        'menu menu main main main aside aside'
+        'footer footer footer footer footer footer footer'
+    ;
+}
+
+.grid>div {
+    background-color: silver;
+    border: 1px solid yellow;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* grid area use korle agular proyojon nei */
+/* .item1 { */
+/* grid-column: 1/7; */
+/* } */
+/*  */
+/* .item2 { */
+/* grid-column: 1/2; */
+/* } */
+/*  */
+/* .item3 { */
+/* grid-column: 2/6; */
+/* } */
+/*  */
+/* .item4 { */
+/* grid-column: 6/7; */
+/* } */
+/*  */
+/* .item5 { */
+/* grid-column: 1/7; */
+/* } */

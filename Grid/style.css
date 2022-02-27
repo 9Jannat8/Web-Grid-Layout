@@ -1,0 +1,25 @@
+.grid {
+    background-color: gray;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 50px 50px;
+}
+
+.grid > div {
+    border: 1px solid black;
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    padding: 5px;
+}
+
+.item1 {
+    text-align: center;
+    grid-column: 1/span 3;
+}
+
+.item5 {
+    grid-column: 1/span 3;
+}
